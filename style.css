@@ -141,7 +141,6 @@ button[disabled] {
 #lengthRange {
     -webkit-appearance: none;  /* Override default CSS styles */
     -moz-user-select: none;
-  /* -ms-user-select: none; */
     appearance: none;
     width: 69%; /* Full-width */
     height: 25px; /* Specified height */
@@ -161,8 +160,26 @@ button[disabled] {
 
 #lengthRange::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
-  -moz-user-select: none;
-  /* -ms-user-select: none; */
+  appearance: none;  
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: hsl(360, 91%, 36%); /* Red background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 25px;
+}
+
+#lengthRange::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;  
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
+  background: hsl(360, 91%, 36%); /* Red background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 25px;
+}
+
+#lengthRange::-ms-thumb {
+  -webkit-appearance: none; /* Override default look */
   appearance: none;  
   width: 50px; /* Set a specific slider handle width */
   height: 50px; /* Slider handle height */
