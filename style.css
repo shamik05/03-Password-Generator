@@ -138,6 +138,8 @@ button[disabled] {
 .header{
   text-align: left;
 }
+
+/* Slider for alternate way of selecting number */
 #lengthRange {
     -webkit-appearance: none;  /* Override default CSS styles */
     -moz-user-select: none;
@@ -163,6 +165,7 @@ button[disabled] {
   opacity: 1; /* Fully shown on mouse-over */
 }
 
+/* Slider thumb appearance for chrome
 #lengthRange::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;  
@@ -173,6 +176,7 @@ button[disabled] {
   border-radius: 25px;
 }
 
+/* Slider thumb appearance for mozilla */
 #lengthRange::-moz-range-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;  
@@ -183,6 +187,7 @@ button[disabled] {
   border-radius: 25px;
 }
 
+/* Slider thumb appearance for IE */
 #lengthRange::-ms-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;  
@@ -193,6 +198,7 @@ button[disabled] {
   border-radius: 25px;
 }
 
+/* Number textbox */
 #lengthNumber{
   border-radius: 6px;
   width: 90px;
@@ -205,18 +211,18 @@ button[disabled] {
   display:inline-block;
   text-align: right;
 }
+/* Remove up and down arrow from number textbox */
 #lengthNumber::-webkit-outer-spin-button, #lengthNumber::-webkit-inner-spin-button {
   -webkit-appearance: none;  /* Override default CSS styles */
   -moz-user-select: none;
   /* -ms-user-select: none; */
   appearance: none;
 }
-
+/* Display check or uncheck depending on validity state */
 input:invalid+span:after {
   content: '✖';
   padding-left: 5px;
 }
-
 input:valid+span:after {
   content: '✓';
   padding-left: 5px;
