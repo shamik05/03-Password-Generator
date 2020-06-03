@@ -1,13 +1,13 @@
 NOT DONE
 Font awesome
-radio button for selection?
 Password strength indicator? Change background color based on how strong it is?
 modal form
 default event
-audio output?
+audio output? what is ajax?
 change event?
 
 DONE
+radio button for selection?
 Copy to clipboard
 Slider + box to select length
 Default values for selections
