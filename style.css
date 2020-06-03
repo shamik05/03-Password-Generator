@@ -155,6 +155,10 @@ button[disabled] {
     margin-top: 16px;
   }
 
+#lengthRange::-webkit-slider-runnable-track{
+  cursor: pointer;
+}
+
 /* Remove border from slider in firefox */
 #lengthRange::-moz-focus-outer {
   border: 0;
@@ -215,9 +219,9 @@ button[disabled] {
 #lengthNumber::-webkit-outer-spin-button, #lengthNumber::-webkit-inner-spin-button {
   -webkit-appearance: none;  /* Override default CSS styles */
   -moz-user-select: none;
-  /* -ms-user-select: none; */
   appearance: none;
 }
+
 /* Display check or uncheck depending on validity state */
 input:invalid+span:after {
   content: '✖';
