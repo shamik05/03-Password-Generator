@@ -315,5 +315,10 @@ input:valid+span:after {
 
 .checkBtns {
   display: block;
-  text-align: center;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.checkBtns #check {
+  margin-top: 0px;
 }
