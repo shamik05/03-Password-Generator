@@ -141,6 +141,8 @@ function writePassword() {
     // console.log(password);
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
+    resetBtn.disabled=false;
+    copyBtn.disabled=false;
   }
 }
 
@@ -149,10 +151,12 @@ generateBtn.addEventListener("click", writePassword);
 
 // Add event listener to reset button
 resetBtn.addEventListener("click", function(){
-  if(confirm("Are you sure you wish to reset? Current password will be lost!")){
-  var passwordText = document.querySelector("#password");
+  var passwordText = document.querySelector("#password")
+  if(confirm("Are you sure you wish to reset? Current password will be lost!")){;
   passwordText.placeholder = "RESET SUCCESSFUL";
   passwordText.value = "";
+  resetBtn.disabled=true;
+  copyBtn.disabled=true;
 }})
 
 // Add event listener to reset button
