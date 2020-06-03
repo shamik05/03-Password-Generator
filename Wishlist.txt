@@ -1,0 +1,15 @@
+NOT DONE
+Font awesome
+radio button for selection?
+Password strength indicator? Change background color based on how strong it is?
+modal form
+default event
+audio output?
+change event?
+
+DONE
+Copy to clipboard
+Slider + box to select length
+Default values for selections
+Look up password generator features
+use ascii or hardcode constant variables?

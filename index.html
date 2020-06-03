@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+
+      <div class="card">
+        <div class="card-header">
+          <h2 class="header">Generate a Password</h2>
+        </div>
+
+        <div class="card-body">
+          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+        </div>
+        
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+          <button id="copy" class="btn">Copy</button>
+          <button id="reset" class="btn">Reset</button>
+          
+          <h2 class="header">Choose a length between 8 and 128 characters</h2>
+
+          <input type="range" min="8" max="128" value="8" id="lengthRange" for="lengthNumber">
+          <input type="number" min="8" max="128" value="8" id="lengthNumber" list="defaultNumbers" required>
+          <span class="validity"></span>
+          <datalist id="defaultNumbers"></datalist>
+        </div>
+
+        <div class="form">
+          <h2 class="header">Choose what type(s) to include</h2>
+          <label for="useLowercase">Include Lowercase</label>
+          <input type="checkbox" id="useLowercase" checked>
+
+          <label for="useUppercase">Include Uppercase</label>
+          <input type="checkbox" id="useUppercase">
+
+          <label for="useNumber">Include Number</label>
+          <input type="checkbox" id="useNumber">
+          
+          <label for="useSymbol">Include Symbol</label>
+          <input type="checkbox" id="useSymbol">
+
+          <button id="check" class="btn">Check All</button>
+          <button id="uncheck" class="btn">Uncheck All</button>
+        </div>
+    </div>
+
+    
+
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
