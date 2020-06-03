@@ -36,20 +36,30 @@
           <datalist id="defaultNumbers"></datalist>
         </div>
 
-        <div class="form">
-          <h2 class="header">Choose what type(s) to include</h2>
-          <label title="Ex: abcd" for="useLowercase">Include Lowercase</label>
-          <input title="Ex: abcd" type="checkbox" id="useLowercase" checked>
+        <h2 class="header">Choose what type(s) to include</h2>
+        <div class="container">
+          <div class="checkbox">
+            <input title="Ex: abcd" type="checkbox" id="useLowercase" checked>
+            <label title="Ex: abcd" for="useLowercase"><span>Include Lowercase</span></label>
+          </div>
 
-          <label title="Ex: ABCD" for="useUppercase">Include Uppercase</label>
-          <input title="Ex: ABCD" type="checkbox" id="useUppercase">
+          <div class="checkbox">
+            <input title="Ex: ABCD" type="checkbox" id="useUppercase">
+            <label title="Ex: ABCD" for="useUppercase"><span>Include Uppercase</span></label>
+          </div>
 
-          <label title="Ex: 1234" for="useNumber">Include Number</label>
-          <input title="Ex: 1234" type="checkbox" id="useNumber">
-          
-          <label title="Ex: !@#$" for="useSymbol">Include Symbol</label>
-          <input title="Ex: !@#$" type="checkbox" id="useSymbol">
+          <div class="checkbox">
+            <input title="Ex: 1234" type="checkbox" id="useNumber">
+            <label title="Ex: 1234" for="useNumber"><span>Include Number</span></label>
+          </div>
 
+          <div class="checkbox">
+            <input title="Ex: !@#$" type="checkbox" id="useSymbol">
+            <label title="Ex: !@#$" for="useSymbol"><span>Include Symbol</span></label>
+          </div>
+        </div>
+
+        <div class=checkBtns>
           <button id="check" class="btn">Check All</button>
           <button id="uncheck" class="btn">Uncheck All</button>
         </div>
