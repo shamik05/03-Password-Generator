@@ -176,11 +176,3 @@ uncheckBtn.addEventListener("click", function(){
   numberEl.checked=false;
   symbolEl.checked=false;
 })
-
-
-
-// var passLength = prompt("Please enter the desired password length in numerical form", "8");
-// var passLower = confirm("Include lowercase? Ex: abcd");
-// var passUpper = confirm("Include uppercase? Ex: ABCD");
-// var passNumber = confirm("Include numbers? Ex: 1234");
-// var passSymbol = confirm('Include symbols? Ex: !@#$');
