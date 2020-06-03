@@ -153,6 +153,11 @@ button[disabled] {
     margin-top: 16px;
   }
 
+/* Remove border from slider in firefox */
+#lengthRange::-moz-focus-outer {
+  border: 0;
+  }
+
 /* Mouse-over effects */
 #lengthRange:hover {
   opacity: 1; /* Fully shown on mouse-over */
