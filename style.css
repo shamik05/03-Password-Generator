@@ -165,7 +165,7 @@ button[disabled] {
   opacity: 1; /* Fully shown on mouse-over */
 }
 
-/* Slider thumb appearance for chrome
+/* Slider thumb appearance for chrome */
 #lengthRange::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;  
