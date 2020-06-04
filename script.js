@@ -27,7 +27,7 @@ for (let i = Number(lengthNumber.min); i<=Number(lengthNumber.max); i++){
   allNum.push(i); // Create an array from 8 to 128;
   // console.log(i);
 }
-
+// Using the earlier array, create the option element in the datalist dynamically
 allNum.forEach(function(item){
   var option = document.createElement("option");
   option.value = item;
@@ -81,10 +81,11 @@ function generatePassword(checkLength, checkLower, checkUpper, checkNumber, chec
     checkLength--;  
   }
   
+  //Add remaining random characters based on checkLength left
   for(let i = 0; i<checkLength; i++){
     password.push(String.fromCharCode(ascTotal[Math.floor(Math.random()*ascTotal.length)]));
   }
-  password=shuffle(password); // Shuffle once otherwise our password will always be in the order of ab3$ depending on checkboxes;
+  password=shuffle(password); // Shuffle once otherwise our password will always be in the order of aB3$ depending on checkboxes;
   return password.join("");
 }
 

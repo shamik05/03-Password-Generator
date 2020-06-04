@@ -12,7 +12,7 @@
   
   <body>
     <div class="wrapper">
-      <header>
+      <header> 
         <h1>Password Generator</h1>
       </header>
 
@@ -21,50 +21,58 @@
           <h2 class="header">Generate a Password</h2>
         </div>
 
+        <!-- Where the password will be displayed -->
         <div class="card-body">
           <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
         </div>
         
+        <!-- Generate, copy and reset buttons -->
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generate" class="btn">Generate Password</button> 
           <button id="copy" disabled class="btn">Copy</button>
           <button id="reset" disabled class="btn">Reset</button>
           
           <h2 class="header">Choose a length between 8 and 128 characters</h2>
 
+          <!-- Synced slider and textbox to input number of characters -->
           <input type="range" min="8" max="128" value="8" id="lengthRange" for="lengthNumber">
           <input type="number" min="8" max="128" value="8" id="lengthNumber" list="defaultNumbers" required>
           <span class="validity"></span>
           <datalist id="defaultNumbers"></datalist>
         </div>
 
-        
+        <!-- Different options for the kinds of characters the user can include -->
         <div class="container">
           <h2 class="header">Choose what type(s) to include</h2>
           <div class="row">
           <div class="col">
           <div class="checkbox">
+            <!-- Lowercase checkbox -->
             <input title="Ex: abcd" type="checkbox" id="useLowercase" checked>
             <label title="Ex: abcd" for="useLowercase"><span>Include Lowercase</span></label>
           </div>
 
           <div class="checkbox">
+            <!-- Uppercase checkbox -->
             <input title="Ex: ABCD" type="checkbox" id="useUppercase">
             <label title="Ex: ABCD" for="useUppercase"><span>Include Uppercase</span></label>
           </div>
 
           <div class="checkbox">
+            <!-- Number checkbox -->
             <input title="Ex: 1234" type="checkbox" id="useNumber">
             <label title="Ex: 1234" for="useNumber"><span>Include Number</span></label>
           </div>
 
           <div class="checkbox">
+            <!-- Symbol checkbox -->
             <input title="Ex: !@#$" type="checkbox" id="useSymbol">
             <label title="Ex: !@#$" for="useSymbol"><span>Include Symbol</span></label>
           </div>
         </div>
       
         <div class="col">
+          <!-- Check and uncheck buttons to act on all checkboxes -->
         <div class=checkBtns>
           <button id="check" class="btn">Check All</button>
           <button id="uncheck" class="btn">Uncheck All</button>

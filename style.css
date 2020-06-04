@@ -235,6 +235,7 @@ input:valid+span:after {
   padding-left: 5px;
 }
 
+/* checkbox and (un)check button */
 .container {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -243,12 +244,14 @@ input:valid+span:after {
   margin: 0;
 }
 
+/* Checkbox */
 .checkbox {
   margin: 15px auto;
   position: relative;
   display: inline;
 }
 
+/* Remove the default checkbox */
 .checkbox input[type="checkbox"] {
   width: auto;
   opacity: 0.00000001;
@@ -257,6 +260,7 @@ input:valid+span:after {
   margin-left: -20px;
 }
 
+/* Label corresponding to the checkbox */
 .checkbox label {
   position: relative;
 }
@@ -287,6 +291,7 @@ input:valid+span:after {
   top: 12px;
   left: 10px;
 }
+/* Essentially a fake checkbox for styling purposes */
 .checkbox input[type="checkbox"]:checked ~ label::before {
   color: hsl(360, 91%, 36%);
 }
@@ -313,6 +318,7 @@ input:valid+span:after {
   outline: 0;
 }
 
+/* Check and Uncheck buttons */
 .checkBtns {
   display: block;
   text-align: right;
